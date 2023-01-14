@@ -1,0 +1,30 @@
+/* RESET E AJUSTES */
+*{border: 0; padding: 0; box-sizing: border-box; background-color: #0b0911; color: #d9cef9; font-family: Arial, Helvetica, sans-serif;}body{margin: 0;}.flex{display: flex; width: 100vw; height: 100vh; justify-content: center; align-items: center;}.content > div{background-color: #1a1725; opacity: 0.9;}
+
+
+/*
+AQUI VOCÊ VAI "BRINCAR" COM O FLEXBOX E TESTAR SUAS PROPRIEDADES.
+OBS: FLEX-DIRECTION E ALIGN-ITEMS ESTÃO DECLARADOS PORÉM OS VALORES DAS PROPRIEDADES SÃO OS PADRÕES DA PROPRIEDADE.
+O COMENTÁRIO IRÁ DELIMITAR ONDE PODE SER ALTERADO. BONS ESTUDOS!
+*/
+.content{
+    display: flex;
+/* ↓ ESPAÇO PARA ALTERAÇÕES ↓ */ 
+    flex-direction: row;
+    align-items: stretch;
+/* ↑ ESPAÇO PARA ALTERAÇÕES ↑ */
+    width: 50vw; 
+    height: 80vh; 
+    gap: 3px;
+    padding: 8px;
+    background-image: url('images/content.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*
+Designed By: Jonatas Silva
+Insta: jonatasilva14
+Github: https://github.com/JsCodeDevlopment
+Linkedin: https://www.linkedin.com/in/jscodedevelopment/
+*/
