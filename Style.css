@@ -4,9 +4,14 @@
 
 /*
 AQUI VOCÊ VAI "BRINCAR" COM O FLEXBOX E TESTAR SUAS PROPRIEDADES.
-OBS: FLEX-DIRECTION E ALIGN-ITEMS ESTÃO DECLARADOS PORÉM OS VALORES DAS PROPRIEDADES SÃO OS PADRÕES DA PROPRIEDADE.
+-----------------------------------------------------------------
+OBS: TODOS OS VALORES PRÉ DEFINIDOS NOS ESPAÇOS DE ALETRAÇÃO, SÃO 
+AS PROPRIEDADES APLICADAS COM SEUS RESPECTIVOS VALORES PADRÕES.
+-----------------------------------------------------------------
 O COMENTÁRIO IRÁ DELIMITAR ONDE PODE SER ALTERADO. BONS ESTUDOS!
 */
+
+/* CONTENT AS ALTERAÇÕES SERÃO GENERICAS PARA TODOS */
 .content{
     display: flex;
 /* ↓ ESPAÇO PARA ALTERAÇÕES ↓ */ 
@@ -20,6 +25,16 @@ O COMENTÁRIO IRÁ DELIMITAR ONDE PODE SER ALTERADO. BONS ESTUDOS!
     background-image: url('images/content.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+/* ITEM VOCÊ PODE INVIDUALIZAR A CADA ITEM UMA PROPRIEDADE ESPECIFICA */
+.item{
+/* ↓ ESPAÇO PARA ALTERAÇÕES ↓ */ 
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+/* ↑ ESPAÇO PARA ALTERAÇÕES ↑ */
 }
 
 /*
