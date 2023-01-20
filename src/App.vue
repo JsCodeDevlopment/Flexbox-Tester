@@ -65,7 +65,7 @@ import FlexItem from "@/components/flex-item.vue";
 	width: 480px;
 	height: 75vh;
 	border-radius: 30px;
-	gap: 19px;
+	gap: 9px;
 	font-family: "Barlow";
 	font-style: normal;
 	font-weight: 400;
