@@ -4,21 +4,26 @@ import FlexItem from "@/components/flex-item.vue";
 
 <template>
 	<div class="title">
-			<h1>FLEXBOX TESTER</h1>
+		<h1>FLEXBOX TESTER</h1>
 	</div>
 	<div class="display">
 		<div class="contentInput">
 			<p>Selecione o componente que deseja fazer as alterações.</p>
-			<select id="pet-select">
-				<option value="">--Please choose an option--</option>
-				<option value="dog">Content</option>
-				<option value="cat">Items</option>
-			</select>
+			<div class="selectButton">
+				<select>
+					<option value="">-- Escolha uma opção --</option>
+					<option value="dog">Content</option>
+					<option value="cat">Items</option>
+				</select>
+			</div>
 			<p>
 				Incremente no input a propriedade e a atribuição desejada. OBS: Caso queira alterar alguma propriedade
 				já presente no código. basta digita-lá novamente com a nova atribuição.
 			</p>
-			<input type="text" />
+			<input
+				type="text"
+				placeholder="Coloque seu código aqui!"
+			/>
 			<div class="cod">Nessa div será exibido as linhas de cód já feitas.</div>
 		</div>
 		<main class="flex">
@@ -60,6 +65,7 @@ import FlexItem from "@/components/flex-item.vue";
 	width: 480px;
 	height: 75vh;
 	border-radius: 30px;
+	gap: 19px;
 	font-family: "Barlow";
 	font-style: normal;
 	font-weight: 400;
@@ -67,8 +73,38 @@ import FlexItem from "@/components/flex-item.vue";
 	line-height: 19px;
 	text-align: center;
 	letter-spacing: -0.03em;
-
 	color: #decffb;
+}
+p {
+	max-width: 350px;
+	font-family: "Barlow";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: -0.03em;
+	color: #decffb;
+}
+input {
+	width: 332px;
+	height: 38px;
+	border-radius: 14px;
+	background-color: #1a1725;
+	border: #decffb 2px solid;
+	font-family: "Barlow";
+	color: #decffb;
+	padding: 0 5px;
+}
+.selectButton select {
+	width: 332px;
+	height: 38px;
+	border-radius: 14px;
+	background-color: #1a1725;
+	border: #decffb 2px solid;
+	font-family: "Barlow";
+	color: #decffb;
+	padding: 0 5px;
 }
 .content > div {
 	background-color: #1a1725;
