@@ -3,38 +3,72 @@ import FlexItem from "@/components/flex-item.vue";
 </script>
 
 <template>
-	<div class="contentInput">
-		<p>
-			Selecione o componente que deseja fazer as alterações.
-		</p>
-		<select id="pet-select">
-    		<option value="">--Please choose an option--</option>
-    		<option value="dog">Content</option>
-    		<option value="cat">Items</option>
-		</select>
-		<p>
-			Incremente no input a propriedade e a atribuição desejada.
-			OBS: Caso queira alterar alguma propriedade já presente no código. basta digita-lá novamente com a nova atribuição.
-		</p>
-		<input type="text">
-		<div class="cod">
-			Nessa div será exibido as linhas de cód já feitas.
-		</div>
+	<div class="title">
+			<h1>FLEXBOX TESTER</h1>
 	</div>
-	<main class="flex">
-		<div class="content">
-			<FlexItem />
+	<div class="display">
+		<div class="contentInput">
+			<p>Selecione o componente que deseja fazer as alterações.</p>
+			<select id="pet-select">
+				<option value="">--Please choose an option--</option>
+				<option value="dog">Content</option>
+				<option value="cat">Items</option>
+			</select>
+			<p>
+				Incremente no input a propriedade e a atribuição desejada. OBS: Caso queira alterar alguma propriedade
+				já presente no código. basta digita-lá novamente com a nova atribuição.
+			</p>
+			<input type="text" />
+			<div class="cod">Nessa div será exibido as linhas de cód já feitas.</div>
 		</div>
-	</main>
+		<main class="flex">
+			<div class="content">
+				<FlexItem />
+			</div>
+		</main>
+	</div>
 </template>
 
 <style>
-.flex {
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+.title {
 	display: flex;
 	width: 100vw;
-	height: 100vh;
+	height: 10vh;
+	justify-content: center;
+	margin-bottom: 18px;
+}
+.display {
+	display: flex;
+	width: 100vw;
+	height: 90vh;
+	gap: 56px;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+}
+.flex {
+	display: flex;
+	align-items: center;
+}
+.contentInput {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #110e18;
+	width: 480px;
+	height: 75vh;
+	border-radius: 30px;
+	font-family: "Barlow";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: -0.03em;
+
+	color: #decffb;
 }
 .content > div {
 	background-color: #1a1725;
@@ -42,11 +76,10 @@ import FlexItem from "@/components/flex-item.vue";
 }
 .content {
 	display: flex;
-
 	flex-direction: row;
 	align-items: stretch;
-	width: 47vw;
-	height: 80vh;
+	width: 40vw;
+	height: 70vh;
 	gap: 3px;
 	padding: 8px;
 	background-image: url("images/content.png");
